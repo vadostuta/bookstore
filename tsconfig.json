@@ -14,7 +14,18 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@modules/*": [
+        "src/app/modules/*"
+      ],
+      "@data": [
+        "src/app/data"
+      ],
+      "@data/*": [
+        "src/app/data/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

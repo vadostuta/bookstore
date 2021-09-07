@@ -1,0 +1,10 @@
+<header>
+  <div class="header">
+    <div>
+      <h1 class="header__title" (click)="handleHomeRedirect()">Book store</h1>
+    </div>
+    <app-button [skin]="'primary'" (handleNewBookEvent)="handleNewBookEvent()">
+      + add new book
+    </app-button>
+  </div>
+</header>

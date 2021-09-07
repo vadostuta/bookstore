@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  background-color: lightcyan;
+  &__title {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,26 @@
+<form [formGroup]="parent" (ngSubmit)="saveBook()" class="book-form">
+  <mat-form-field appearance="outline">
+    <mat-label>book name</mat-label>
+    <input
+      matInput
+      placeholder="type here"
+      formControlName="name"
+    >
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>author name</mat-label>
+    <input
+      matInput
+      placeholder="type here"
+      formControlName="author"
+    >
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>desription</mat-label>
+    <textarea matInput placeholder="type here" formControlName="description"></textarea>
+  </mat-form-field>
+
+  <app-button type="submit">Save</app-button>
+</form>

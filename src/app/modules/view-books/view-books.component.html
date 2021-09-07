@@ -1,0 +1,15 @@
+<div class="view-books">
+  <div *ngIf="data$ | async as books else noItems">
+    <div *ngFor="let book of books; trackBy: trackByFn" class="view-books__item">
+      <app-view-book-item
+        [data]="book"
+        (handleEditEvent)="handleEditEvent($event)"
+        (handleDeleteEvent)="handleDeleteEvent($event)"
+      ></app-view-book-item>
+    </div>
+  </div>
+
+  <ng-template #noItems>
+    There are no book here yet, go and some.
+  </ng-template>
+</div>
